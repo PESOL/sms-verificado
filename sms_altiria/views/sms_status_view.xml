@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+    <record id="view_sms_status_form" model="ir.ui.view">
+      <field name="name">view.sms.status.form</field>
+      <field name="model">sms.status</field>
+      <field name="arch" type="xml">
+        <form string="SMS Status">
+          <sheet>
+            <group name="main">
+              <field name="partner_id"/>
+              <field name="phone_number"/>
+              <field name="model_name"/>
+              <field name="model_id"/>
+              <field name="user_id"/>
+              <field name="sended"/>
+              <field name="company_id" invisible="1"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="view_sms_status_tree" model="ir.ui.view">
+      <field name="name">view.sms_status.tree</field>
+      <field name="model">sms.status</field>
+      <field name="arch" type="xml">
+        <tree string="SMS Status">
+          <field name="create_date"/>
+          <field name="partner_id"/>
+          <field name="phone_number"/>
+          <field name="model_name"/>
+          <field name="model_id"/>
+          <field name="user_id"/>
+          <field name="sended"/>
+          <field name="company_id" invisible="1"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_sms_status_search" model="ir.ui.view">
+      <field name="name">view.sms_status.search</field>
+      <field name="model">sms.status</field>
+      <field name="arch" type="xml">
+        <search string="SMS Status">
+          <field name="partner_id"/>
+          <field name="phone_number"/>
+          <field name="model_name"/>
+          <field name="model_id"/>
+          <field name="user_id"/>
+          <field name="company_id"/>
+          <field name="create_date"/>
+          <group string="Group By" name="groupby">
+            <filter name="model_name_groupby" string="Model Name" context="{'group_by': 'model_name'}"/>
+            <filter name="user_id_groupby" string="User" context="{'group_by': 'user_id'}"/>
+            <filter name="phone_number_groupby" string="Phone Number" context="{'group_by': 'phone_number'}"/>
+            <filter name="create_date_groupby" string="Date" context="{'group_by': 'create_date'}"/>
+          </group>
+        </search>
+      </field>
+    </record>
+
+    <record id="sms_altiria_status_action" model="ir.actions.act_window">
+      <field name="name">SMS Status</field>
+      <field name="res_model">sms.status</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+        <p class="oe_view_nocontent_create">
+          Click to create a new SMS Status.
+        </p>
+      </field>
+    </record>
+
+    <record id="sms_altiria_get_credit_action" model="ir.actions.server">
+      <field name="type">ir.actions.server</field>
+      <field name="state">code</field>
+      <field name="name">Get Credit</field>
+      <field name="model_id" ref="model_sms_status"/>
+      <field name="code">model.get_credit()</field>
+    </record>
+
+    <menuitem id="sms_altiria_status_menu" action="sms_altiria.sms_altiria_status_action" sequence="20" web_icon="sms_altiria,static/description/icon.png"/>
+    <menuitem id="sms_altiria_creck_credit" parent="sms_altiria_status_menu" action="sms_altiria.sms_altiria_get_credit_action" sequence="20"/>
+
+  </data>
+</openerp>
