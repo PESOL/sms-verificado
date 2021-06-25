@@ -8,9 +8,6 @@ from odoo import models, fields
 class Company(models.Model):
     _inherit = 'res.company'
 
-    sms_domain = fields.Char(
-        string='SMS Domain')
-
     sms_login = fields.Char(
         string='SMS Login')
 

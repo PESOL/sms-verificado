@@ -39,6 +39,9 @@ class SmsStatus(models.Model):
         store=True,
         string='Company')
 
+    status = fields.Char(
+        string='Status')
+    
     def get_credit(self):
         url = 'http://www.altiria.net/api/http'
         company = self.env.user.company_id

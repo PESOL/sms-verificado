@@ -1,14 +1,14 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-#	* sms_altiria
+# 	* sms_altiria
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 11.0\n"
+"Project-Id-Version: Odoo Server 13.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-25 06:18+0000\n"
-"PO-Revision-Date: 2020-06-25 06:18+0000\n"
-"Last-Translator: <>\n"
+"POT-Creation-Date: 2021-06-25 06:38+0000\n"
+"PO-Revision-Date: 2021-06-25 06:38+0000\n"
+"Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,30 +16,9 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: sms_altiria
-#: model:ir.model.fields,field_description:sms_altiria.field_sms_status_ack_code
-msgid "ACK Code"
-msgstr "Código ACK"
-
-#. module: sms_altiria
-#: model:ir.model,name:sms_altiria.model_mail_activity
-msgid "Activity"
-msgstr "Actividad"
-
-#. module: sms_altiria
-#: model:ir.model,name:sms_altiria.model_calendar_attendee
-msgid "Attendee information"
-msgstr "Información del asistente"
-
-#. module: sms_altiria
-#: code:addons/sms_altiria/models/sms_status.py:78
-#, python-format
-msgid "CREDITO SMS"
-msgstr "CREDITO SMS"
-
-#. module: sms_altiria
-#: model:ir.actions.act_window,help:sms_altiria.sms_status_action
+#: model_terms:ir.actions.act_window,help:sms_altiria.sms_altiria_status_action
 msgid "Click to create a new SMS Status."
-msgstr "Click para crear un nuevo Objeto SMS."
+msgstr "Crear nuevo estado SMS"
 
 #. module: sms_altiria
 #: model:ir.model,name:sms_altiria.model_res_company
@@ -47,9 +26,9 @@ msgid "Companies"
 msgstr "Compañías"
 
 #. module: sms_altiria
-#: model:ir.model.fields,field_description:sms_altiria.field_sms_status_company_id
+#: model:ir.model.fields,field_description:sms_altiria.field_sms_status__company_id
 msgid "Company"
-msgstr "Compañía"
+msgstr "Compañia"
 
 #. module: sms_altiria
 #: model:ir.model,name:sms_altiria.model_res_partner
@@ -57,96 +36,40 @@ msgid "Contact"
 msgstr "Contacto"
 
 #. module: sms_altiria
-#: model:ir.model.fields,field_description:sms_altiria.field_sms_status_create_uid
+#: model:ir.model.fields,field_description:sms_altiria.field_sms_status__create_uid
 msgid "Created by"
 msgstr "Creado por"
 
 #. module: sms_altiria
-#: model:ir.model.fields,field_description:sms_altiria.field_sms_status_create_date
+#: model:ir.model.fields,field_description:sms_altiria.field_sms_status__create_date
 msgid "Created on"
 msgstr "Creado en"
 
 #. module: sms_altiria
-#: model:ir.ui.view,arch_db:sms_altiria.view_sms_status_search
+#: model_terms:ir.ui.view,arch_db:sms_altiria.view_sms_status_search
 msgid "Date"
 msgstr "Fecha"
 
 #. module: sms_altiria
-#: model:ir.model.fields,field_description:sms_altiria.field_sms_status_display_name
+#: model:ir.model.fields,field_description:sms_altiria.field_sms_status__display_name
 msgid "Display Name"
 msgstr "Nombre mostrado"
 
 #. module: sms_altiria
-#: code:addons/sms_altiria/models/calendar.py:29
-#, python-format
-msgid "Don't want to receive SMS is marked on all this clients %s"
-msgstr "No desea recibir SMS esta marcado en estos contactos %s"
-
-#. module: sms_altiria
-#: selection:sms.status,status:0
-msgid "El mensaje excede la longitud máxima permitida"
-msgstr "El mensaje excede la longitud máxima permitida"
-
-#. module: sms_altiria
-#: selection:sms.status,status:0
-msgid "El teléfono no existe"
-msgstr "El teléfono no existe"
-
-#. module: sms_altiria
-#: selection:sms.status,status:0
-msgid "Entregado"
-msgstr "Entregado"
-
-#. module: sms_altiria
-#: model:ir.model,name:sms_altiria.model_calendar_event
-msgid "Event"
-msgstr "Evento"
-
-#. module: sms_altiria
-#: model:ir.actions.server,name:sms_altiria.get_credit_action
-#: model:ir.ui.menu,name:sms_altiria.creck_sms_credit
+#: model:ir.actions.server,name:sms_altiria.sms_altiria_get_credit_action
+#: model:ir.ui.menu,name:sms_altiria.sms_altiria_creck_credit
 msgid "Get Credit"
-msgstr "Saldo Disponible"
+msgstr "Obtener Saldo"
 
 #. module: sms_altiria
-#: model:ir.ui.view,arch_db:sms_altiria.view_sms_status_search
+#: model_terms:ir.ui.view,arch_db:sms_altiria.view_sms_status_search
 msgid "Group By"
 msgstr "Agrupar por"
 
 #. module: sms_altiria
-#: model:ir.model.fields,field_description:sms_altiria.field_sms_status_id
+#: model:ir.model.fields,field_description:sms_altiria.field_sms_status__id
 msgid "ID"
-msgstr "ID (identificación)"
-
-#. module: sms_altiria
-#: model:ir.model,name:sms_altiria.model_account_invoice
-msgid "Invoice"
-msgstr "Factura"
-
-#. module: sms_altiria
-#: model:ir.model.fields,field_description:sms_altiria.field_sms_status___last_update
-msgid "Last Modified on"
-msgstr "Última modificación en"
-
-#. module: sms_altiria
-#: model:ir.model.fields,field_description:sms_altiria.field_sms_status_write_uid
-msgid "Last Updated by"
-msgstr "Última actualización de"
-
-#. module: sms_altiria
-#: model:ir.model.fields,field_description:sms_altiria.field_sms_status_write_date
-msgid "Last Updated on"
-msgstr "Última actualización en"
-
-#. module: sms_altiria
-#: model:ir.model,name:sms_altiria.model_crm_lead
-msgid "Lead/Opportunity"
-msgstr "Iniciativa/Oportunidad"
-
-#. module: sms_altiria
-#: selection:sms.status,status:0
-msgid "Mala cobertura, Buzón de mensajes cortos lleno o teléfono apagado"
-msgstr "Mala cobertura, Buzón de mensajes cortos lleno o teléfono apagado"
+msgstr ""
 
 #. module: sms_altiria
 #: model:res.groups,name:sms_altiria.altiria_sms_manager
@@ -154,143 +77,84 @@ msgid "Manager"
 msgstr "Responsable"
 
 #. module: sms_altiria
-#: model:ir.model.fields,field_description:sms_altiria.field_sms_status_mail_message
-msgid "Message"
-msgstr "Mensaje"
-
-#. module: sms_altiria
-#: model:ir.model.fields,field_description:sms_altiria.field_sms_status_model_id
+#: model:ir.model.fields,field_description:sms_altiria.field_sms_status__model_id
 msgid "Model Id"
-msgstr "ID Modelo"
+msgstr "ID modelo"
 
 #. module: sms_altiria
-#: model:ir.ui.view,arch_db:sms_altiria.view_sms_status_search
-msgid "Model Name"
-msgstr "Nombre Modelo"
-
-#. module: sms_altiria
-#: model:ir.model.fields,field_description:sms_altiria.field_sms_status_model_name
+#: model_terms:ir.ui.view,arch_db:sms_altiria.view_sms_status_search
+#: model:ir.model.fields,field_description:sms_altiria.field_sms_status__model_name
 msgid "Model name"
-msgstr "Nombre Modelo"
+msgstr "Nombre modelo"
 
 #. module: sms_altiria
-#: selection:sms.status,status:0
-msgid "No Entregado"
-msgstr "No Entregado"
+#: model:ir.model,name:sms_altiria.model_sms_sms
+msgid "Outgoing SMS"
+msgstr "SMS salientes"
 
 #. module: sms_altiria
-#: selection:sms.status,status:0
-msgid "No acepta mensaje"
-msgstr "No acepta mensaje"
-
-#. module: sms_altiria
-#: model:ir.model.fields,field_description:sms_altiria.field_sms_status_partner_id
+#: model:ir.model.fields,field_description:sms_altiria.field_sms_status__partner_id
 msgid "Partner"
-msgstr "Empresa"
+msgstr "Contacto"
 
 #. module: sms_altiria
-#: model:ir.model.fields,field_description:sms_altiria.field_sms_status_phone_number
-#: model:ir.ui.view,arch_db:sms_altiria.view_sms_status_search
+#: model:ir.model.fields,field_description:sms_altiria.field_sms_status__phone_number
+#: model_terms:ir.ui.view,arch_db:sms_altiria.view_sms_status_search
 msgid "Phone Number"
 msgstr "Teléfono"
 
 #. module: sms_altiria
-#: selection:sms.status,status:0
-msgid "Problema en la red de teléfonia movil"
-msgstr "Problema en la red de teléfonia movil"
+#: model:ir.model,name:sms_altiria.model_sms_api
+msgid "SMS API"
+msgstr "API de SMS"
 
 #. module: sms_altiria
-#: model:ir.module.category,name:sms_altiria.altiria_sms_category
-msgid "SMS"
-msgstr "SMS"
-
-#. module: sms_altiria
-#: model:ir.ui.view,arch_db:sms_altiria.view_company_inherit_form
+#: model_terms:ir.ui.view,arch_db:sms_altiria.view_company_inherit_form
 msgid "SMS Configuration"
 msgstr "Configuración SMS"
 
 #. module: sms_altiria
-#: model:ir.model.fields,field_description:sms_altiria.field_res_company_sms_domain
-msgid "SMS Domain"
-msgstr "Dominio SMS"
-
-#. module: sms_altiria
-#: model:ir.model.fields,field_description:sms_altiria.field_res_company_sms_login
+#: model:ir.model.fields,field_description:sms_altiria.field_res_company__sms_login
 msgid "SMS Login"
-msgstr "Usuario SMS"
+msgstr "Usuario"
 
 #. module: sms_altiria
-#: model:ir.model.fields,field_description:sms_altiria.field_res_company_sms_passwd
+#: model:ir.model.fields,field_description:sms_altiria.field_res_company__sms_passwd
 msgid "SMS Password"
-msgstr "Contraseña SMS"
+msgstr "Contraseña"
 
 #. module: sms_altiria
-#: model:ir.model.fields,field_description:sms_altiria.field_res_partner_sms_out
-#: model:ir.model.fields,field_description:sms_altiria.field_res_users_sms_out
-msgid "SMS out"
-msgstr "No acepta SMS"
+#: model:ir.actions.act_window,name:sms_altiria.sms_altiria_status_action
+#: model:ir.ui.menu,name:sms_altiria.sms_altiria_status_menu
+#: model_terms:ir.ui.view,arch_db:sms_altiria.view_sms_status_form
+#: model_terms:ir.ui.view,arch_db:sms_altiria.view_sms_status_search
+#: model_terms:ir.ui.view,arch_db:sms_altiria.view_sms_status_tree
+msgid "SMS Status"
+msgstr "Estado SMS"
 
 #. module: sms_altiria
-#: code:addons/sms_altiria/models/sms_status.py:78
-#, python-format
-msgid "Saldo Disponible: "
-msgstr "Saldo Disponible: "
+#: model:ir.model,name:sms_altiria.model_sms_composer
+msgid "Send SMS Wizard"
+msgstr "Enviar asistente de SMS"
 
 #. module: sms_altiria
-#: model:ir.actions.act_window,name:sms_altiria.send_crm_sms_action
-#: model:ir.actions.act_window,name:sms_altiria.send_enrollment_sms_action
-#: model:ir.actions.act_window,name:sms_altiria.send_invoice_sms_action
-msgid "Send SMS"
-msgstr "Enviar SMS"
-
-#. module: sms_altiria
-#: model:ir.model.fields,field_description:sms_altiria.field_sms_status_sended
+#: model:ir.model.fields,field_description:sms_altiria.field_sms_status__sended
 msgid "Sended"
 msgstr "Enviado"
 
 #. module: sms_altiria
-#: model:ir.model.fields,field_description:sms_altiria.field_res_company_sms_sender
+#: model:ir.model.fields,field_description:sms_altiria.field_res_company__sms_sender
 msgid "SenderId"
-msgstr "SenderId"
+msgstr "SenderId (Remitente SMS)"
 
 #. module: sms_altiria
-#: model:ir.ui.view,arch_db:sms_altiria.view_sms_status_search
-msgid "State"
-msgstr "Estado"
-
-#. module: sms_altiria
-#: model:ir.model.fields,field_description:sms_altiria.field_sms_status_status
-msgid "Status"
-msgstr "Estado"
-
-#. module: sms_altiria
-#: model:ir.model.fields,help:sms_altiria.field_sms_status_company_id
-msgid "The company this user is currently working for."
-msgstr "La compañía para la cual trabaja este usuario actualmente."
-
-#. module: sms_altiria
-#: model:ir.model.fields,field_description:sms_altiria.field_sms_status_user_id
-#: model:ir.ui.view,arch_db:sms_altiria.view_sms_status_search
+#: model:ir.model.fields,field_description:sms_altiria.field_sms_status__user_id
+#: model_terms:ir.ui.view,arch_db:sms_altiria.view_sms_status_search
 #: model:res.groups,name:sms_altiria.altiria_sms_user
 msgid "User"
 msgstr "Usuario"
 
 #. module: sms_altiria
-#: model:ir.model,name:sms_altiria.model_education_enrollment
-msgid "education.enrollment"
-msgstr "education.enrollment"
-
-#. module: sms_altiria
-#: model:ir.model,name:sms_altiria.model_sms_api
-msgid "sms.api"
-msgstr "sms.api"
-
-#. module: sms_altiria
-#: model:ir.model,name:sms_altiria.model_sms_send_sms
-msgid "sms.send_sms"
-msgstr "sms.send_sms"
-
-#. module: sms_altiria
 #: model:ir.model,name:sms_altiria.model_sms_status
 msgid "sms.status"
-msgstr "sms.status"
+msgstr ""

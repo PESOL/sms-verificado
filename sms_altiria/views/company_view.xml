@@ -9,7 +9,6 @@
       <xpath expr="//notebook" position="inside">
         <page string="SMS Configuration">
           <group>
-            <field name="sms_domain"/>
             <field name="sms_sender"/>
             <field name="sms_login"/>
             <field name="sms_passwd" password="True"/>

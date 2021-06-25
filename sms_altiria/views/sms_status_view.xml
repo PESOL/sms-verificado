@@ -12,6 +12,7 @@
               <field name="phone_number"/>
               <field name="model_name"/>
               <field name="model_id"/>
+              <field name="status"/>
               <field name="user_id"/>
               <field name="sended"/>
               <field name="company_id" invisible="1"/>
@@ -31,6 +32,7 @@
           <field name="phone_number"/>
           <field name="model_name"/>
           <field name="model_id"/>
+          <field name="status"/>
           <field name="user_id"/>
           <field name="sended"/>
           <field name="company_id" invisible="1"/>
