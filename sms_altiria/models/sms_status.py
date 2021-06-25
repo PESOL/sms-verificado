@@ -41,7 +41,7 @@ class SmsStatus(models.Model):
 
     status = fields.Char(
         string='Status')
-    
+
     def get_credit(self):
         url = 'http://www.altiria.net/api/http'
         company = self.env.user.company_id
@@ -50,10 +50,6 @@ class SmsStatus(models.Model):
             'login': company.sms_login,
             'passwd': company.sms_passwd
         }
-        if company.sms_domain:
-            payload.update({
-                'domainId': company.sms_domain
-            })
         contentType = {
             'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8'}
         r = requests.post(url, data=payload,
