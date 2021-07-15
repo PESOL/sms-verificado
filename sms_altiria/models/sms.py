@@ -87,7 +87,8 @@ class SmsApi(models.AbstractModel):
                                 'body': message
                             })
                     else:
-                        active_id = self.env.context.get('default_res_ids')
+                        active_id = self.env.context.get('default_res_ids') or\
+                            self.env.context.get('default_res_id')
                         model_ids = self.env[model._name].browse(active_id)
                         model_id = model_ids.filtered(
                             lambda l: l.partner_id and
