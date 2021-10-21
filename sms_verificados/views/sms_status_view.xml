@@ -62,7 +62,7 @@
       </field>
     </record>
 
-    <record id="sms_altiria_status_action" model="ir.actions.act_window">
+    <record id="sms_verificados_status_action" model="ir.actions.act_window">
       <field name="name">SMS Status</field>
       <field name="res_model">sms.status</field>
       <field name="view_mode">tree,form</field>
@@ -73,7 +73,7 @@
       </field>
     </record>
 
-    <record id="sms_altiria_get_credit_action" model="ir.actions.server">
+    <record id="sms_verificados_get_credit_action" model="ir.actions.server">
       <field name="type">ir.actions.server</field>
       <field name="state">code</field>
       <field name="name">Get Credit</field>
@@ -81,8 +81,8 @@
       <field name="code">model.get_credit()</field>
     </record>
 
-    <menuitem id="sms_altiria_status_menu" action="sms_altiria.sms_altiria_status_action" sequence="20" web_icon="sms_altiria,static/description/icon.png"/>
-    <menuitem id="sms_altiria_creck_credit" parent="sms_altiria_status_menu" action="sms_altiria.sms_altiria_get_credit_action" sequence="20"/>
+    <menuitem id="sms_verificados_status_menu" action="sms_verificados.sms_verificados_status_action" sequence="20" web_icon="sms_verificados,static/description/icon.png"/>
+    <menuitem id="sms_verificados_creck_credit" parent="sms_verificados_status_menu" action="sms_verificados.sms_verificados_get_credit_action" sequence="20"/>
 
   </data>
 </openerp>

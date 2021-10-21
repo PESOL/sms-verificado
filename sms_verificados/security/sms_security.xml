@@ -3,21 +3,21 @@
 
 <odoo>
 
-  <record id="altiria_sms_category" model="ir.module.category">
+  <record id="sms_verificados_category" model="ir.module.category">
     <field name="name">SMS</field>
   </record>
 
-  <record id="altiria_sms_user" model="res.groups">
+  <record id="sms_verificados_user" model="res.groups">
     <field name="name">User</field>
     <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
     <field name="users" eval="[(4, ref('base.user_root'))]"/>
-    <field name="category_id" ref="sms_altiria.altiria_sms_category"/>
+    <field name="category_id" ref="sms_verificados.sms_verificados_category"/>
   </record>
 
-  <record id="altiria_sms_manager" model="res.groups">
+  <record id="sms_verificados_manager" model="res.groups">
     <field name="name">Manager</field>
-    <field name="category_id" ref="sms_altiria.altiria_sms_category"/>
-    <field name="implied_ids" eval="[(4, ref('sms_altiria.altiria_sms_user'))]"/>
+    <field name="category_id" ref="sms_verificados.sms_verificados_category"/>
+    <field name="implied_ids" eval="[(4, ref('sms_verificados.sms_verificados_user'))]"/>
   </record>
 
 </odoo>

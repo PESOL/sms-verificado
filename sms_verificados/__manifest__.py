@@ -5,13 +5,13 @@
 
 
 {
-    'name': 'Altiria SMS Gateway',
-    'version': '13.0.0.0.1',
+    'name': 'SMS Verificados Gateway',
+    'version': '14.0.0.0.1',
     'license': 'AGPL-3',
     'category': 'Comunication',
     'sequence': 1,
     'complexity': 'easy',
-    'author': 'PESOL, Odoo Community Association (OCA)',
+    'author': 'PESOL',
     'depends': [
         'base',
         'mail',

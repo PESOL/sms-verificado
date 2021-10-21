@@ -21,7 +21,7 @@ class SmsApi(models.AbstractModel):
         if self.env.context.get('default_composition_mode') == 'mass':
             create_log = True
         sms_status_obj = self.env['sms.status']
-        url = 'http://www.altiria.net/api/http'
+        url = 'http://web.smsverificados.net/api/http'
         user_id = self.env.user and self.env.user.id
         try:
             payload = {

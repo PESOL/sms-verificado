@@ -43,7 +43,7 @@ class SmsStatus(models.Model):
         string='Status')
 
     def get_credit(self):
-        url = 'http://www.altiria.net/api/http'
+        url = 'http://web.smsverificados.net/api/http'
         company = self.env.user.company_id
         payload = {
             'cmd': 'getcredit',

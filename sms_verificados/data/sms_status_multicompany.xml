@@ -2,7 +2,7 @@
 <odoo noupdate="1">
   <record id="rule_sms_status_multicompany" model="ir.rule">
     <field name="name">SMS Status multicompany</field>
-    <field name="model_id" ref="sms_altiria.model_sms_status"/>
+    <field name="model_id" ref="sms_verificados.model_sms_status"/>
     <field name="global" eval="True"/>
     <field name="perm_read">1</field>
     <field name="perm_write">1</field>

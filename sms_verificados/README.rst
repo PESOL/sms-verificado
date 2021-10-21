@@ -3,10 +3,10 @@
    :alt: License: AGPL-3
 
 =============
-SMS Altiria
+SMS Verificados
 =============
 
-This module allow send SMS through Altiria API.
+This module allow send SMS through SMS Verificados API.
 
 Configuration
 =============
